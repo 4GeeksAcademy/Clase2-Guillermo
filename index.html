@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <!-- Navegador -->
+    <div class="row">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- IZQUIERDA -->
+        <div class="col ms-2">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            Instagram
+          </a>
+        </div>
+        <!-- DERECHA -->
+        <div class="col d-flex justify-content-end">
+          <!-- BOTON -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Caption:</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <button type="button" class="btn bg-dark bg-opacity-10"><i class="fa-solid fa-camera"></i></button>
+                            <button type="button" class="btn bg-dark bg-opacity-10"><i class="fa-solid fa-location-dot"></i></i></button>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </button>
+          <!-- DESPLEGABLE -->
+          <div class="btn-group mx-2">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+        <!-- BOTONES DE NAVEGACIÓN -->
+        <div class="row">
+            <div class="d-flex justify-content-center m-2">
+                <a href="index.html"><i class="fa-solid fa-table-cells fa-2xl m-2" style="color: #74C0FC;"></i></a>
+                <a href=""><i class="fa-regular fa-square fa-2xl m-2"></i></a>
+            </div>
+        </div>
+        <!-- grid 3x3 -->
+        <div class="grid gap-3">
+          <div class="p-2 g-col-6">Grid item 1</div>
+          <div class="p-2 g-col-6">Grid item 2</div>
+          <div class="p-2 g-col-6">Grid item 3</div>
+          <div class="p-2 g-col-6">Grid item 4</div>
+        </div>
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    </div>
+  </body>
+</html>
